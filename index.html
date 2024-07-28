@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Model Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>FastAPI Model Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Gender">Gender:</label>
+        <input type="number" id="Gender" name="Gender" required><br><br>
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" required><br><br>
+
+        <label for="Occupation">Occupation:</label>
+        <input type="number" id="Occupation" name="Occupation" required><br><br>
+
+        <label for="City_Category">City Category:</label>
+        <input type="number" id="City_Category" name="City_Category" required><br><br>
+
+        <label for="Stay_In_Current_City_Years">Stay In Current City Years:</label>
+        <input type="number" id="Stay_In_Current_City_Years" name="Stay_In_Current_City_Years" required><br><br>
+
+        <label for="Marital_Status">Marital Status:</label>
+        <input type="number" id="Marital_Status" name="Marital_Status" required><br><br>
+
+        <label for="Product_Category_1">Product Category 1:</label>
+        <input type="number" id="Product_Category_1" name="Product_Category_1" required><br><br>
+
+        <label for="Product_Category_2">Product Category 2:</label>
+        <input type="number" id="Product_Category_2" name="Product_Category_2"><br><br>
+
+        <label for="Product_Category_3">Product Category 3:</label>
+        <input type="number" id="Product_Category_3" name="Product_Category_3"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2>Prediction: {{ prediction }}</h2>
+</body>
+</html>
